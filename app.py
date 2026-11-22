@@ -8,11 +8,32 @@ st.set_page_config(
 )
 
 # Page styling
+
+# Page styling
 st.markdown("""
 <style>
     .stApp {
-        background-color: #F7F9FC;
-        color: #243247;
+        background: #F4F7FB !important;
+    }
+
+    [data-testid="stAppViewContainer"] {
+        background: #F4F7FB !important;
+    }
+
+    [data-testid="stHeader"] {
+        background: transparent !important;
+    }
+
+    [data-testid="stMain"] {
+        color: #34445A !important;
+    }
+
+    h1, h2, h3 {
+        color: #183153 !important;
+    }
+
+    p {
+        color: #52647A;
     }
 
     .block-container {
@@ -21,69 +42,57 @@ st.markdown("""
         padding-bottom: 4rem;
     }
 
-    h1, h2, h3 {
-        color: #183153;
-    }
-
     .hero {
         background: #FFFFFF;
         padding: 42px;
         border-radius: 14px;
-        border: 1px solid #E3EAF2;
+        border: 1px solid #DCE5EF;
         margin-bottom: 30px;
     }
 
-    .eyebrow {
-        color: #3976A8;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-
     .hero h1 {
+        color: #183153 !important;
         font-size: 38px;
-        line-height: 1.2;
-        margin-bottom: 15px;
     }
 
     .hero p {
-        color: #52647A;
+        color: #52647A !important;
         font-size: 17px;
         line-height: 1.7;
+    }
+
+    .eyebrow, .status {
+        color: #3976A8 !important;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 
     .project-card {
         background: #FFFFFF;
         padding: 24px;
-        border: 1px solid #E3EAF2;
+        border: 1px solid #DCE5EF;
         border-radius: 12px;
         min-height: 190px;
     }
 
     .project-card h3 {
+        color: #183153 !important;
         font-size: 19px;
-        margin-bottom: 12px;
     }
 
     .project-card p {
-        color: #596B80;
-        line-height: 1.6;
+        color: #596B80 !important;
         font-size: 14px;
-    }
-
-    .status {
-        color: #3976A8;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
+        line-height: 1.6;
     }
 
     .about {
-        background: #EDF3F9;
+        background: #EAF1F8;
         padding: 25px;
         border-radius: 12px;
-        line-height: 1.7;
+        color: #34445A;
+        line-height: 1.8;
     }
 
     .footer {
@@ -94,7 +103,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
 
 # Homepage introduction
 st.markdown("""
@@ -201,6 +209,7 @@ st.markdown("""
     and applied AI.
 
     <br><br>
+
     The focus is on demonstrating how technical methods can be applied
     to business and industrial challenges, with clear explanations of
     the approach, findings and limitations.
