@@ -8,8 +8,6 @@ st.set_page_config(
 )
 
 # Page styling
-
-# Page styling
 st.markdown("""
 <style>
     .stApp {
@@ -201,20 +199,18 @@ with p2:
 st.markdown("---")
 st.header("About this portfolio")
 
-st.markdown("""
-<div class="about">
-    My background spans materials engineering, industrial problem-solving
-    and business strategy. This portfolio brings these perspectives
-    together through practical work in data analytics, machine learning
-    and applied AI.
+st.write(
+    "My background spans materials engineering, industrial "
+    "problem-solving and business strategy. This portfolio brings "
+    "these perspectives together through practical work in data "
+    "analytics, machine learning and applied AI."
+)
 
-    <br><br>
-
-    The focus is on demonstrating how technical methods can be applied
-    to business and industrial challenges, with clear explanations of
-    the approach, findings and limitations.
-</div>
-""", unsafe_allow_html=True)
+st.write(
+    "The focus is on demonstrating how technical methods can be "
+    "applied to business and industrial challenges, with clear "
+    "explanations of the approach, findings and limitations."
+)
 
 
 # Footer
